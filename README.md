@@ -1,101 +1,170 @@
-# 🛠️ Engineering Journal – WRO Future Engineers 2025  
-**Team Name**: Future Dynamics  
-**Institution**: XYZ International School  
-**Country**: India  
+# 💪 Engineering Journal – WRO Future Engineers 2025
 
-### 👥 Team Members
+**Team Name**: Arclight Robotics  
+**Institution**: [Your School/College Name]  
+**Country**: India
 
-| Name            | Role                      | Responsibilities                        |
-|-----------------|---------------------------|------------------------------------------|
-| Arnav Ramteke   | Lead Programmer           | Software architecture, vision & control |
-| Priya Sharma    | Mechanical Designer       | CAD design, chassis & drivetrain         |
-| Rishi Verma     | Electrical Engineer       | Wiring, power management, sensors setup  |
-| Anaya Iyer      | Documentation & Strategy  | Journal writing, testing & logistics     |
+## 📃 Table of Contents
 
----
-
-## 1. 📘 Introduction & Team Overview  
-We are a team of four high school students passionate about robotics, automation, and solving real-world challenges. Our project for WRO Future Engineers 2025 is an autonomous electric vehicle capable of navigating lanes, detecting obstacles, and adapting to its environment using vision and sensor fusion.
+- [👥 The Team](#the-team)
+- [🌟 Challenge Overview](#challenge-overview)
+- [🧐 Design & Build](#design--build)
+- [🚗 Mobility & Steering](#mobility--steering)
+- [🛠️ Power & Sensors](#power--sensors)
+- [🔧 Assembly & Testing](#assembly--testing)
+- [🔎 Obstacle Handling](#obstacle-handling)
+- [📉 Cost Breakdown](#cost-breakdown)
 
 ---
 
-## 2. 🧩 Challenge Description  
-The 2025 Future Engineers challenge tasked teams with designing an autonomous, sensor-driven electric vehicle that can safely complete a predefined route while reacting to dynamic obstacles and road features.
+## 👥 The Team
+
+| Name          | Role              | Description                                    |
+| ------------- | ----------------- | ---------------------------------------------- |
+| Arnav Ramteke | Software Lead     | Responsible for control logic and vision code. |
+| Member 2      | Hardware Engineer | Designed chassis and component placement.      |
+| Member 3      | Circuit Designer  | Designed and soldered the PCB.                 |
+| Member 4      | Integration Lead  | Final robot assembly and field testing.        |
+
+_Add Team Photo Here:_  
+`![Team Photo](media/team_photo.jpg)`
 
 ---
 
-## 3. 🎯 Requirements & Goals  
-Our vehicle needed to:
-- Detect and follow lanes using computer vision  
-- Stop at virtual stop lines  
-- Avoid both static and moving obstacles  
-- Perform consistent navigation under varying lighting conditions  
+## 🌟 Challenge Overview
 
-Beyond these, our goals included:
-- Creating a modular software stack  
-- Ensuring sensor redundancy and fault tolerance  
-- Achieving over 95% success in simulation and physical tests  
+The WRO 2025 Future Engineers challenge required teams to develop an autonomous electric vehicle that can navigate a randomized racetrack using computer vision and sensors, execute three laps, avoid obstacles, interpret traffic markers (red/green), and complete parallel parking.
 
 ---
 
-## 4. 🧠 Design Rationale
+## 🧐 Design & Build
 
-### 🔩 Mechanical Design  
-Our chassis was laser-cut from lightweight acrylic with a wheelbase optimized for turns within a 1-meter radius. We used rubber-lined tires for grip and a 2-wheel differential drive for maneuverability.
+### Chassis & Mounting
 
-### 🔌 Electrical System  
-We used a 7.4V Li-ion battery pack with a voltage regulator to safely power both the Raspberry Pi and motor driver. A fuse and polarity protection were integrated.
+- Fully 3D-printed lightweight frame.
+- Integrated mounts for camera, motor, and PCB.
+- Modular component slots for easy maintenance.
 
-### 📡 Sensors & Actuators  
-- **Ultrasonic (HC-SR04)** – For distance sensing up to 4m  
-- **IMU (MPU6050)** – To detect orientation and motion drift  
-- **Raspberry Pi Camera v2** – For lane detection and stop-line detection  
-Sensors were placed with minimal occlusion, aligned with the robot's heading for optimal readings.
+_Add Robot Chassis Image:_  
+`![Chassis Top View](media/chassis_top.jpg)`
 
-### 🧮 Algorithms  
-- Lane detection: Color masking + Hough Transform  
-- Obstacle detection: Distance thresholding  
-- Control: PID controller for smooth steering  
-- IMU integration: Drift correction for heading  
+### Key Features
+
+- **Balanced Weight Distribution**: Centralized LiPo battery.
+- **Wiring Management**: Routed under PCB with hot glue for strain relief.
+- **Compact Design**: Ensured eligibility under size constraints.
 
 ---
 
-## 5. 🛠️ Development Process
+## 🚗 Mobility & Steering
 
-### 📅 Timeline  
-- ✅ Research (Week 1–2)  
-- ✅ Prototyping (Week 3–4)  
-- ✅ Integration (Week 5–6)  
-- ✅ Testing (Week 7–8)  
-- ✅ Finalization (Week 9–10)  
+### Drive System
 
-### 🔄 Iterations  
-We iterated on:
-- Chassis height (reduced to lower CoG)  
-- Sensor position (ultrasonic moved to center)  
-- Software refactoring (modularized code for debugging)  
+- **Motor**: Pololu 30:1 Micro Metal Gearmotor (12V).  
+  `![Pololu Motor](media/motor.jpg)`
+- **Driver**: TB6612FNG Motor Driver.  
+  `![Motor Driver](media/motor_driver.jpg)`
+- **Drivetrain**: LEGO differential with custom 3D-printed gear.
 
----
+### Steering
 
-## 6. 🔧 Hardware Integration
-
-### Components Used
-
-| Component          | Purpose                | Model / Specs           |
-|--------------------|------------------------|--------------------------|
-| Raspberry Pi 4     | Processing Unit         | 4GB RAM                 |
-| L298N Motor Driver | Motor Control           | Dual H-Bridge           |
-| Ultrasonic Sensor  | Obstacle Detection      | HC-SR04                 |
-| IMU Sensor         | Orientation Tracking    | MPU6050                 |
-| Pi Camera Module   | Vision                  | 8MP, 1080p              |
-
-### 📷 Wiring Diagram  
-_Include an image or link here_  
-`![Wiring Diagram](images/wiring.png)`
+- **Type**: Parallelogram front-wheel steering.
+- **Servo**: MG90S Micro Servo.  
+  `![MG90S Servo](media/mg90s_servo.jpg)`
+- **Turn Angle**: Up to ±50 degrees for sharp cornering.
+- **Mounts**: Carbon fiber rods with custom joints.
 
 ---
 
-## 7. 💻 Software Architecture
+## 🛠️ Power & Sensors
 
-### Folder Structure
+### Power Supply
+
+- **Battery**: 3S 450mAh Li-Po.  
+  `![Li-Po Battery](media/lipo_battery.jpg)`
+- **Regulator**: L7805CV Linear Regulator.  
+  `![Voltage Regulator](media/voltage_regulator.jpg)`
+
+### Main Controller
+
+- **Board**: Arduino Nano ESP32 (handles sensors & motors).  
+  `![Arduino Nano ESP32](media/arduino_esp32.jpg)`
+
+### Vision
+
+- **Camera**: OpenMV H7 (detects traffic signs, lanes).  
+  `![OpenMV Camera](media/openmv_h7.jpg)`
+
+### Sensors
+
+- **IMU**: BMI088 (gyro + accelerometer).  
+  `![BMI088 IMU](media/bmi088.jpg)`
+- **Distance**: JS40F IR Sensor (parking & obstacle detection).  
+  `![JS40F Sensor](media/js40f.jpg)`
+
+---
+
+## 🔧 Assembly & Testing
+
+### Steps
+
+1. 3D Print parts and test fit.
+2. Assemble drivetrain and steering.
+3. Solder PCB and mount it.
+4. Install sensors, motor, battery.
+5. Secure all wiring and connectors.
+6. Upload code to Arduino and OpenMV.
+
+_Add Wiring Diagram:_  
+`![Wiring Diagram](media/wiring_diagram.jpg)`
+
+### Testing
+
+- Lane tracking in controlled lighting.
+- Obstacle avoidance using color detection.
+- Parking maneuver tested on scale layout.
+
+---
+
+## 🔎 Obstacle Handling
+
+### OpenMV H7 Logic
+
+- Detects red (R) and green (G) cubes.
+- Sends UART command to Arduino for avoidance.
+
+### Arduino Logic
+
+- Implements a finite state machine:
+  - **PID**: Straight line using gyro.
+  - **FOLLOW_CUBE**: Camera directs servo.
+  - **AVOID_CUBE**: Turns + moves based on cube color.
+  - **AFTER_CUBE**: Recenters after avoidance.
+
+### Parking Logic
+
+- Determines parking side from lap direction.
+- Executes 2-step parallel park using gyro-based turns.
+
+_Add Image of Robot During Parking:_  
+`![Parking Demo](media/parking_demo.jpg)`
+
+---
+
+## 📉 Cost Breakdown
+
+| Component                 | Qty | Unit Cost (₹) | Total (₹) |
+| ------------------------- | --- | ------------- | --------- |
+| Arduino Nano ESP32        | 1   | 1800          | 1800      |
+| Pololu Gearmotor 30:1     | 1   | 1800          | 1800      |
+| MG90S Servo               | 1   | 400           | 400       |
+| OpenMV H7 Camera          | 1   | 6500          | 6500      |
+| BMI088 IMU                | 1   | 700           | 700       |
+| JS40F Distance Sensor     | 1   | 1000          | 1000      |
+| TB6612FNG Driver          | 1   | 300           | 300       |
+| Li-Po Battery (3S 450mAh) | 1   | 600           | 600       |
+| PCB + Soldering           | 1   | 500           | 500       |
+| 3D Printed Parts          | -   | 1500          | 1500      |
+| Misc. (wires, nuts, glue) | -   | 500           | 500       |
+| **Total**                 |     |               | **16600** |
 
