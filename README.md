@@ -1,6 +1,6 @@
 # 💪 Engineering Journal – WRO Future Engineers 2025
 
-**Team Name**: Arclight Robotics  
+**Team Name**: MakerWorks Lab  
 **Institution**: [Your School/College Name]  
 **Country**: India
 
@@ -19,12 +19,12 @@
 
 ## 👥 The Team
 
-| Name          | Role              | Description                                    |
+| Name          | Role              | Responsibilities                               |
 | ------------- | ----------------- | ---------------------------------------------- |
-| Arnav Ramteke | Software Lead     | Responsible for control logic and vision code. |
-| Member 2      | Hardware Engineer | Designed chassis and component placement.      |
-| Member 3      | Circuit Designer  | Designed and soldered the PCB.                 |
-| Member 4      | Integration Lead  | Final robot assembly and field testing.        |
+| Vinay Ummadi  | Coach             |                                                |
+| Kiara Bhandari| Participant       |                                                |
+| Shubh Gupta   | Participant       |                                                |
+| Arnav Ramteke | Participant       |         |
 
 _Add Team Photo Here:_  
 `![Team Photo](media/team_photo.jpg)`
