@@ -1,4 +1,4 @@
-# 💪 Engineering Journal – WRO Future Engineers 2025
+#  WRO Future Engineers 2025
 
 **Team Name**: MakerWorks Lab  
 **Institution**: [Your School/College Name]  
