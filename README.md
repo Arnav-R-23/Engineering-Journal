@@ -155,15 +155,17 @@ _Add Image of Robot During Parking:_
 
 | Component                 | Qty | Unit Cost (₹) | Total (₹) |
 | ------------------------- | --- | ------------- | --------- |
-| Arduino Nano ESP32        | 1   | 1800          | 1800      |
-| Pololu Gearmotor 30:1     | 1   | 1800          | 1800      |
-| MG90S Servo               | 1   | 400           | 400       |
-| OpenMV H7 Camera          | 1   | 6500          | 6500      |
-| BMI088 IMU                | 1   | 700           | 700       |
-| JS40F Distance Sensor     | 1   | 1000          | 1000      |
-| TB6612FNG Driver          | 1   | 300           | 300       |
-| Li-Po Battery (3S 450mAh) | 1   | 600           | 600       |
-| PCB + Soldering           | 1   | 500           | 500       |
+| Raspberry Pi HDMI         | 1   | 1800          | 1800      |
+| Camera Module 3 Wide      | 1   | 1800          | 1800      |
+| PCA9685 Servo Motor Driver| 1   | 400           | 400       |
+| Switch                    | 1   | 6500          | 6500      |
+| tb6612Fng Motor Driver    | 1   | 700           | 700       |
+| MG995 Servo Motor         | 1   | 1000          | 1000      |
+| N20 Motors                | 2   | 300           | 300       |
+| Ambrane 10,000 MAh 33W
+  Power Bank                | 1   | 600           | 600       |
+| LiPo 18650 battery        | 1   | 500           | 500       |
+| LiDAR                     | 1   | 500           | 500       |
 | 3D Printed Parts          | -   | 1500          | 1500      |
 | Misc. (wires, nuts, glue) | -   | 500           | 500       |
 | **Total**                 |     |               | **16600** |
