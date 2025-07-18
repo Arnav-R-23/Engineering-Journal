@@ -24,7 +24,7 @@
 | Vinay Ummadi  | Coach             |                                                |
 | Kiara Bhandari| Participant       |                                                |
 | Shubh Gupta   | Participant       |                                                |
-| Arnav Ramteke | Participant       |         |
+| Arnav Ramteke | Participant       |                                                |
 
 _Add Team Photo Here:_  
 `![Team Photo](media/team_photo.jpg)`
@@ -87,7 +87,7 @@ _Add Robot Chassis Image:_
 
 ### Main Controller
 
-- **Board**: Arduino Nano ESP32 (handles sensors & motors).  
+- **Board**: Raspberry Pi HDMI (handles sensors & motors).  
   `![Arduino Nano ESP32](media/arduino_esp32.jpg)`
 
 ### Vision
