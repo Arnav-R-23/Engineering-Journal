@@ -162,8 +162,7 @@ _Add Image of Robot During Parking:_
 | tb6612Fng Motor Driver    | 1   | 700           | 700       |
 | MG995 Servo Motor         | 1   | 1000          | 1000      |
 | N20 Motors                | 2   | 300           | 300       |
-| Ambrane 10,000 MAh 33W
-  Power Bank                | 1   | 600           | 600       |
+| Ambrane 10,000 MAh 33 W  Power Bank| 1   | 600           | 600       |
 | LiPo 18650 battery        | 1   | 500           | 500       |
 | LiDAR                     | 1   | 500           | 500       |
 | 3D Printed Parts          | -   | 1500          | 1500      |
